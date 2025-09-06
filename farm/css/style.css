@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    color:rgb(102, 102, 102);
+    font-family:"arial Black","HG丸ｺﾞｼｯｸM-PRO","sans-serif";
+    background-color:#f1d4b8;
+    background-image:url(../images/bg.png);
+    /* background-repeat:repeat-x;
+    background-position:top bottom; */
+    
+}
+header{
+    /* background-color: aquamarine; */
+    width:1240px;
+    margin:0 auto 44px;
+}
+h1{
+    text-align:center;
+    padding: 20px 0px 16px;
+}
+ul{
+    list-style-type:none;
+    padding-left:0;
+}
+header nav ul{
+    display: flex;
+    justify-content:space-evenly;
+    border-top: 2px solid #056440;
+    border-bottom: 2px solid #056440;
+    background-color: beige;
+    padding: 12px 0px 10px;
+}
+a{
+    text-decoration:none;
+    color:#056440;
+}
+div{
+    display:flex;
+}
