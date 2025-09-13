@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+    html{
+        font-size:16px;
+    }
 body{
     color:rgb(102, 102, 102);
     font-family:"arial Black","HG丸ｺﾞｼｯｸM-PRO","sans-serif";
@@ -10,7 +13,6 @@ body{
     
 }
 header{
-    /* background-color: aquamarine; */
     width:1240px;
     margin:0 auto 44px;
 }
@@ -27,7 +29,7 @@ header nav ul{
     justify-content:space-evenly;
     border-top: 2px solid #056440;
     border-bottom: 2px solid #056440;
-    background-color: beige;
+    background-color: rgb(245, 245, 236);
     padding: 12px 0px 10px;
 }
 a{
@@ -36,4 +38,71 @@ a{
 }
 div{
     display:flex;
+    justify-content:space-between;
+    width:1240px;
+    margin:0 auto 50px;
+}
+main {
+    flex-basis:920px;
+    background-color:#ffffff;
+    border-radius:16px;
+    padding:45px 72px 45px 72px;
+    box-shadow:0px 0px 10px 5px #dfdede;
+}
+aside {
+    flex-basis:284px;
+}
+aside nav {
+    background-color:#ffffff;
+    border-radius:16px;
+    padding:24px 28px;
+    margin-bottom:24px;
+    box-shadow:0px 0px 10px 5px #dfdede;
+}
+aside nav h2 {
+    margin-bottom:18px;
+    font-size:1.5rem;
+    font-weight:bold;
+    color: #a17272;
+}
+aside nav ul {
+    font-size:1.2rem;
+}
+.categoryNav ul li {
+    list-style-type:square;
+    color: #7c5d48;
+    margin:0 0 16px 20px;
+}
+.recentNav ul li {
+    border-bottom:1px solid #7c5d48;
+    padding-bottom:10px;
+    margin-bottom:22px;
+}
+
+/* 640px以下 */
+@media screen and (max-width:640px){
+    html{
+        font-size:13px;
+    }
+header{
+    width:100%;
+}
+    h1{
+    text-align:left;
+    padding: 20px 0px 16px;
+}
+    main {
+        margin-left: 16px;
+        margin-right:16px;
+        margin-bottom:30px;
+    }
+    aside {
+        margin-left: 16px;
+        margin-right:16px;
+        margin-bottom:30px;
+    }
+    div {
+        display:block;
+        width:100%;
+    }
 }
